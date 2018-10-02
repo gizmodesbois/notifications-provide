@@ -1,7 +1,7 @@
 /* eslint react/prefer-stateless-function: off */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NotificationConsumer } from './index';
+import { NotificationConsumer } from '../index';
 
 const withNotifications = () => (WrappedComponent) => {
     const notificationHoC = props => (

@@ -21,11 +21,11 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _notification = require('./components/notification');
+var _notification = require('../components/notification');
 
 var _notification2 = _interopRequireDefault(_notification);
 
-var _notifications = require('./service/notifications');
+var _notifications = require('../service/notifications');
 
 var _notifications2 = _interopRequireDefault(_notifications);
 

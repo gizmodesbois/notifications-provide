@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import Notification from './components/notification';
-import NotificationsService from './service/notifications';
+import Notification from '../components/notification';
+import NotificationsService from '../service/notifications';
 
 const NotificationContext = React.createContext('notification');
 
