@@ -25,9 +25,6 @@
     "url": "https://github.com/gizmodesbois/notifications-provider/issues"
   },
   "homepage": "https://github.com/gizmodesbois/notifications-provider#readme",
-  "publishConfig": {
-    "access": "restricted"
-  },
   "peerDependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
