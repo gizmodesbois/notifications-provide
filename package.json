@@ -4,8 +4,8 @@
   "description": "Elegant way to display notifications on screen with ReactJS",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack",
-    "prepublish": "rm -rf ./dist && npm run build"
+    "transpile": "babel src -d dist --copy-files",
+    "prepublish": "rm -rf ./dist && npm run transpile"
   },
   "repository": {
     "type": "git",
@@ -26,27 +26,20 @@
   },
   "homepage": "https://github.com/gizmodesbois/notifications-provider#readme",
   "peerDependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "prop-types": "^15.6.2"
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "prop-types": "^15.6.2",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.21.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^5.0.1",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.0",
-    "eslint-plugin-react": "^7.10.0",
     "path": "^0.12.7",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   }
 }

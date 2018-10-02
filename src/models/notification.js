@@ -9,7 +9,7 @@ const uuid = () => {
     return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 };
 
-class Notification {
+class NotificationModel {
     constructor({
         title,
         message,
@@ -24,4 +24,4 @@ class Notification {
     }
 }
 
-export default Notification;
+export default NotificationModel;
