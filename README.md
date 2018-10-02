@@ -17,7 +17,7 @@ Using yarn
 You have to add the `NotificationsProvider` component to the root of your React component tree . It will provide you a method inside the tree to use the notifications.
 
 ```
-import { NotificationsProvider } from 'notifications-provider';
+import { NotificationsProvider } from 'react-notifications-provider';
 
 ReactDOM.render(
   <NotificationsProvider>
@@ -30,8 +30,8 @@ ReactDOM.render(
 Now you may create components in this React tree that will use the `withNotifications()` HoC.
 
 ```
-import withNotifications from 'notifications-provider/withNotifications';
-import Notification from 'notifications-provider/models/notification';
+import withNotifications from 'react-notifications-provider/withNotifications';
+import Notification from 'react-notifications-provider/models/notification';
 
 class Component extends React.Component {
     ...
