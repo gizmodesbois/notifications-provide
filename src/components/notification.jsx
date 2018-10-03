@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { notificationsIcons } from '../constants';
 
 const Notification = ({
-    id,
     title,
     message,
     type,
@@ -22,7 +21,7 @@ const Notification = ({
                 {message}
             </span>
         </span>
-        <button type="button" className="notification-close" onClick={() => { remove(id); }}>
+        <button type="button" className="notification-close" onClick={remove}>
             <svg>
                 <circle r="18" cx="20" cy="20" style={{ animationDuration: `${(timer / 1000)}s` }} />
             </svg>
@@ -34,7 +33,6 @@ const Notification = ({
 );
 
 Notification.propTypes = {
-    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,

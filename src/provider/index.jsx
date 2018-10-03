@@ -58,7 +58,7 @@ class NotificationsProvider extends React.Component {
                             <NotificationComp
                                 {...{ ...notif }}
                                 key={notif.id}
-                                remove={this.notificationsService.remove}
+                                remove={() => { this.notificationsService.remove(notif.id); }}
                             />
                         );
                     })}
