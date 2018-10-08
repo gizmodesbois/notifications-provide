@@ -13,14 +13,14 @@ class NotificationModel {
     constructor({
         title,
         message,
-        type,
-        timer,
+        type = 'success',
+        timer = NOTIFICATION_TIMER,
     }) {
         this.id = uuid();
         this.title = title;
         this.message = message;
-        this.type = type || 'success';
-        this.timer = timer || NOTIFICATION_TIMER;
+        this.type = type;
+        this.timer = timer;
     }
 }
 
